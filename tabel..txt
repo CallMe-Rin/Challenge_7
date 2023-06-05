@@ -1,0 +1,40 @@
+Table role {
+  id integer [primary key]
+  name integer
+  createdAt timestamp 
+  updatedAt timestamp
+}
+
+Table user {
+  id integer [primary key]
+  name varchar
+  email varchar
+  image varchar
+  encryptedPassword varchar
+  roleId integer
+  createdAt timestamp 
+  updatedAt timestamp
+}
+
+Table car {
+  id integer [primary key]
+ name varchar
+  price float
+size varchar
+  image varchar
+  isCurrentlyRented boolean
+  createdAt timestamp 
+  updatedAt timestamp
+}
+
+Table userCar {
+  id integer [primary key]
+userId integer [ref: - user.id]
+carId integer  [ref: - car.id]
+rentStartedAt timestamp
+rentEndedAt timestamp
+ createdAt timestamp 
+  updatedAt timestamp
+}
+
+Ref: role.id > user.roleId
