@@ -1,5 +1,10 @@
-# Challenge Chapter 7
-percobaan unit testing menggunakan jest dan supertest, dan percobaan deployment menggunakan railway
+# BCR API
+
+Di dalam repository ini terdapat implementasi API dari Binar Car Rental.
+Tugas kalian disini adalah:
+1. Fork repository
+2. Tulis unit test di dalam repository ini menggunakan `jest`.
+3. Coverage minimal 70%
 
 ## Test Result
 ![Test Result](./testing.png)
@@ -54,14 +59,3 @@ yarn db:seed
 ```bash
 yarn test
 ```
-
-## How To Run
-
--   Running Project on development
-
-```bash
-yarn develop
-```
-
-## ERD
-![db](./erd.png)
